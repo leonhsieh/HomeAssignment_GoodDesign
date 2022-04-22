@@ -11,6 +11,7 @@ class ScrollViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!    
         
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +20,8 @@ class ScrollViewController: UIViewController {
         tableView.dataSource = self
         tableView.contentInsetAdjustmentBehavior = .never
     }
+    
+    //    TODO: set back button's alpha to 1.
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
